@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Glow Beauty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Glow Beauty Logo" id="logo">
+    <h1 class="title">Glow Beauty – Natural Skincare</h1>
+</header>
+
+   
+    <main>
+        <h2>Welcome ... Where Beauty Finds You..</h2>
+        <p>Welcome to Glow Beauty, your destination for natural and effective skincare products.
+        Our mission is to help you achieve healthy, glowing skin using safe and natural ingredients.</p>
+        <p>Explore our collection and find the perfect skincare routine tailored just for you.</p>
+    </main>
+
+   
+    <section class="trust">
+        <p>⭐ Rated 5 stars by customers</p>
+        <p>🌿 100% Natural Ingredients</p>
+        <p>📦 Fast Delivery</p>
+        <p>💬 Customer Support Available</p>
+    </section>
+
+    
+    <footer>
+        <nav>
+            <a class ="links" href="{{ url_for('about') }}">About</a>
+            <a class ="links" href="{{ url_for('products') }}">Products</a>
+            <a class ="links" href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

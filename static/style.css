@@ -1,0 +1,175 @@
+
+body {
+    background: linear-gradient(to bottom right, #caebe8, #ffffff); 
+    color: #3b2f2f;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #4a3b30;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.trust {
+    margin-top: 40px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#logo {
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.05); 
+}
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.links {
+    color: #4a3b30;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.links:hover {
+    color: #3c8786;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #a67c52;
+}
+
+.products{
+    width: 130px; 
+    height: 130px; 
+    border-radius: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.products:hover{
+    transform: scale(1.05); 
+}
+
+.text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.price{
+    font-family: cursive;
+}
+
+.price:hover{
+    color: rgb(29, 34, 33);
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+footer{
+   font-family: cursive; 
+}
+
+.question{
+    font-family: cursive;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f7fdfc; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d6cfc7;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #7bbfae; 
+    box-shadow: 0 0 5px rgba(123,191,174,0.4);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a3b30;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #7bbfae; 
+    color: #4a3b30;
+}
+
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .products {
+        width: 100px;
+        height: 100px;
+    }
+
+    .links {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}
